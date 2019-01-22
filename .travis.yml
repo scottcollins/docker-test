@@ -7,11 +7,11 @@ script:
   - docker run scottcollins/react-webapp:test npm run test -- --coverage
 deploy:
   provider: elasticbeanstalk
-  region: us-east-1
-  app: docker-react
-  environment: DockerReact-env
-  bucket_name: elasticbeanstalk-us-east-1-367770124266
-  bucket_path: docker-react
+  region: "us-east-1"
+  app: "docker-react"
+  environment: "DockerReact-env"
+  bucket_name: "elasticbeanstalk-us-east-1-367770124266"
+  bucket_path: "docker-react"
   on:
     branch: master
   access_key_id: "$AWS_ACCESS_KEY_ID"
